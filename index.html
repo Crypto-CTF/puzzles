@@ -1,23 +1,14 @@
-<h1>The Room is not open, yet.</h1>
-<p>Get your key <a href=https://bit.ly/Crypto-CTF>here</a></p>
+<!DOCTYPE html>
 <script>
-function isToday(dateParameter) {
+function isToday() {
         var today = new Date();
-        return dateParameter.getDate() === today.getDate() && dateParameter.getMonth() === today.getMonth() && dateParameter.getFullYear() === today.getFullYear();
-}
+        return 23 === today.getDate() || 24 === today.getDate() || 25 === today.getDate()
+        
 
-
-var key_crypto1 = isToday(new Date('23-08-2019'));
-var key_crypto2 = isToday(new Date('24-08-2019'));
-var key_crypto3 = isToday(new Date('25-08-2019'));
-
-if(key_crypto1 || key_crypto2 || key_crypto3){
+if(isToday()){
   location = 'CRYPTO-PUZZLES-2019.pdf';
 }
 
-var key_crypto4 = isToday(new Date('21-08-2019'));
-        
-if(key_crypto4){
-  console.log(true);
-}
 </script>
+<h1>The Room is not open, yet.</h1>
+<p>Get your key <a href=https://bit.ly/Crypto-CTF>here</a></p>
