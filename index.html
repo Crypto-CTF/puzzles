@@ -1,2 +1,17 @@
 <h1>The Room is not open, yet.</h1>
 <p>Get your key <a href=https://bit.ly/Crypto-CTF>here</a></p>
+<script>
+function isToday(dateParameter) {
+        var today = new Date();
+        return dateParameter.getDate() === today.getDate() && dateParameter.getMonth() === today.getMonth() && dateParameter.getFullYear() === today.getFullYear();
+}
+
+
+var key_crypto1 = isToday(new Date('22-08-2014')));
+var key_crypto2 = isToday(new Date('23-08-2014')));
+var key_crypto3 = isToday(new Date('24-08-2014')));
+
+if(key_crypto1 || key_crypto2 || key_crypto3){
+  console.log(true);
+}
+</script>
